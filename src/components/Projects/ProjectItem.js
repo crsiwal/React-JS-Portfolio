@@ -1,21 +1,33 @@
 import React from "react";
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import { BiLinkExternal } from "react-icons/bi";
+import { Col, Card } from "react-bootstrap";
+import {
+  VisitWebsite,
+  InDevelopmentProject,
+  ProjectShutdown,
+} from "./ProjectItemActions";
 
-function ProjectCards(props) {
+export default function ProjectCards(props) {
   return (
-    <Card className="bg-dark text-white">
-      <Card.Img src={props.img} alt="Card image" />
-      <Card.ImgOverlay className="project">
-        <Card.Title>Card title</Card.Title>
-        <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in to
-          additional content. This content is a little bit longer.
-        </Card.Text>
-        <Card.Text>Last updated 3 mins ago</Card.Text>
-      </Card.ImgOverlay>
-    </Card>
+    <Col xs={12} md={4} className="project-card mb-4">
+      <Card className="project-card-view">
+        <Card.Img
+          style={{ minHeight: "250px", maxHeight: "270px" }}
+          src={props.img}
+          alt="Card image"
+        />
+        <Card.ImgOverlay style={{ opacity: 0 }}>
+          <Card.Title style={{ fontSize: "22px" }}>{props.title}</Card.Title>
+          {props.status == "active_web" ? (
+            <VisitWebsite {...props} />
+          ) : props.status == "dev_web" ? (
+            <InDevelopmentProject {...props} />
+          ) : props.status == "shutdown" ? (
+            <ProjectShutdown {...props} />
+          ) : (
+            ""
+          )}
+        </Card.ImgOverlay>
+      </Card>
+    </Col>
   );
 }
-export default ProjectCards;

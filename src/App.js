@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/Resume";
 import PageNotFound from "./components/Pages/PageNotFound";
@@ -34,6 +35,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/project" component={Projects} />
+          <Route path="/contact" component={Contact} />
           <Route path="/resume" component={Resume} />
           <Route path="*" component={PageNotFound} />
         </Switch>

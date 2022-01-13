@@ -1,11 +1,17 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import ProjectItem from "./ProjectItem";
 import ProjectSummery from "./ProjectSummery";
 import Employers from "./Employers";
 import {
-  adGyde, bailiwick, gonutrio, nmss,
-  adgyde_dashboard, irctc_push, adgyde_website, jio_messenger
+  adGyde,
+  bailiwick,
+  gonutrio,
+  nmss,
+  adgyde_dashboard,
+  irctc_push,
+  adgyde_website,
+  jio_messenger,
 } from "../Assets";
 
 function Projects() {
@@ -14,42 +20,41 @@ function Projects() {
     <Container fluid className="project-section">
       <Container>
         <ProjectSummery />
-        <h1 className="project-heading">Career <strong className="purple">Journey</strong></h1>
+        <h1 className="project-heading">
+          Career <strong className="purple">Journey</strong>
+        </h1>
         <Employers />
-        <p style={{ color: "white" }}>Here are a few projects I've worked on.</p>
+        <p style={{ color: "white" }}>
+          Here are a few projects I've worked on.
+        </p>
         <Row style={{ paddingBottom: "10px" }}>
-          <Col xs={12} md={4} className="project-card">
-            <ProjectItem
-              img={adgyde_dashboard}
-              title="AdGyde Dashboard"
-              link="https://www.adgyde.com/login?ref=rsiwal.com"
-            />
-          </Col>
+          <ProjectItem
+            img={adgyde_dashboard}
+            title="High-end, custom residential renovaters serving Fraser Valley homeowners."
+            link="https://www.adgyde.com/login?ref=rsiwal.com"
+            status="active_web"
+          />
 
-          <Col xs={12} md={4} className="project-card">
-            <ProjectItem
-              img={irctc_push}
-              title="Push Dashboard Using Segments"
-              link="https://segments.truenotify.in"
-            />
-          </Col>
+          <ProjectItem
+            img={irctc_push}
+            title="High-end, custom residential renovaters serving Fraser Valley homeowners."
+            link="https://segments.truenotify.in"
+            status="active_web"
+          />
 
-          <Col xs={12} md={4} className="project-card">
-            <ProjectItem
-              img={adgyde_website}
-              title="AdGyde Website"
-              link="https://www.adgyde.com?ref=rsiwal.com"
-            />
-          </Col>
+          <ProjectItem
+            img={adgyde_website}
+            title="High-end, custom residential renovaters serving Fraser Valley homeowners."
+            link="https://www.adgyde.com?ref=rsiwal.com"
+            status="dev_web"
+          />
 
-          <Col xs={12} md={4} className="project-card">
-            <ProjectItem
-              img={jio_messenger}
-              title="Jio Feature Phone Messenger"
-              description=""
-            />
-          </Col>
-          
+          <ProjectItem
+            img={jio_messenger}
+            title="High-end, custom residential renovaters serving Fraser Valley homeowners."
+            status="shutdown"
+            shutdownYear={2017}
+          />
         </Row>
       </Container>
     </Container>

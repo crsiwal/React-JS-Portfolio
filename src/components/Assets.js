@@ -1,3 +1,6 @@
+// Navbar Images
+import logo from "../Assets/logo.png";
+
 // Import Home Page Images
 import homeLogo from "../Assets/home-main.png";
 
@@ -30,6 +33,9 @@ import pageNotFound from "../Assets/about.png";
 // ===========================================================================================================
 // ===========================================================================================================
 
+// Export Navbar Images
+export { logo };
+
 // Export Home Page Images
 export { homeLogo };
 
@@ -40,7 +46,7 @@ export { AboutMeCard, PersonalImg, mspup, ccs, uptu };
 export { projectCover };
 
 // Companies logo exported
-export { momagic, adGyde, bailiwick, gonutrio, nmss }
+export { momagic, adGyde, bailiwick, gonutrio, nmss };
 
 // Export Projects Images
 export { adgyde_dashboard, irctc_push, adgyde_website, jio_messenger };

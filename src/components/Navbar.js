@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
+import { logo } from "./Assets";
 import { Link } from "react-router-dom";
 import { ImBlog } from "react-icons/im";
-import {
-  AiOutlineFilePdf,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
+import { AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
+
+import { VscLink } from "react-icons/vsc";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -85,11 +83,7 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                href="#"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <Nav.Link href="#" target="_blank" rel="noreferrer">
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
             </Nav.Item>
@@ -98,15 +92,16 @@ function NavBar() {
               <Button
                 as={Link}
                 to="/resume"
-                className="fork-btn-inner"
+                className="fork-btn-inner text-white rounded-pill"
               >
-                <AiOutlineFilePdf style={{ fontSize: "1.5em" }} />{" Resume"}
+                <VscLink style={{ marginTop: "-5px", fontSize: "1.5em" }} />
+                {" Resume"}
               </Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </Navbar >
+    </Navbar>
   );
 }
 

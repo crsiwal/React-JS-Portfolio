@@ -30,6 +30,16 @@ body {
   color: var(--imp-text-color) !important;
 }
 
+/* Override Bootstrap CSS */
+.btn-outline-primary {
+  border-width: 2px;
+  border-color: var(--imp-text-color);
+}
+.btn-outline-primary:hover {
+  background-color: var(--imp-text-color);
+  border-color: var(--imp-text-color);
+}
+
 /* --------- */
 /*  Preloader */
 /* --------- */
@@ -450,61 +460,43 @@ body {
 }
 
 .project-card {
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
   height: auto !important;
+  padding: 0 10px;
 }
 
+.project-card .card-img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.project-card:hover .card-img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.project-card .card-img-overlay {
+  background-color: var(--text-color) !important;
+  color: #ffffff;
+  -webkit-transition: 0.45s ease-in-out;
+  transition: 0.45s ease-in-out;
+  padding: 3rem 1rem;
+  z-index: 1;
+}
+.project-card .card-img-overlay:hover {
+  opacity: 1 !important;
+}
 .project-card-view {
-  transition: all 0.5s ease 0s !important;
+  /* transition: all 0.5s ease 0s !important; */
   height: 100% !important;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 5px 0 rgb(61 117 141 / 69%), 0 0 0 1px #ffffff;
 }
-.project-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-}
-
-.blog-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
-}
-
-.blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
-
-.blog-link {
-  text-decoration: none !important;
-}
-
-.blog-link:hover {
-  cursor: pointer !important;
-}
-
-.blog-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
-}
-
 .card-img-top {
   padding: 20px;
   opacity: 1 !important;
   border-radius: 10px !important;
-}
-
-.blog-img {
-  padding: 0px !important;
-  opacity: 1 !important;
-  border-radius: 0px !important;
 }
 
 .btn-primary {
