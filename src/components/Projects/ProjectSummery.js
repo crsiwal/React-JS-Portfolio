@@ -1,18 +1,19 @@
 import React from "react";
 import { Row, Col, Card } from "react-bootstrap";
-import { AboutMeCard } from "./../Assets";
-export default function AboutMe() {
+import { projectCover } from "../Assets";
+
+export default function ProjectSummery() {
   return (
     <Row style={{ justifyContent: "center", padding: "10px" }}>
-      <Col md={7} style={{ justifyContent: "center", paddingTop: "30px", paddingBottom: "50px" }} >
+      <Col md={7} style={{ justifyContent: "center", paddingTop: "30px", paddingBottom: "50px" }}>
         <Card className="quote-card-view">
           <Card.Body>
             <blockquote className="blockquote">
               <p style={{ textAlign: "justify" }}>
-                Web is fun, I really enjoy creating things that live on the internet.
-                My interest in web development started back in 2011 when I decided to try
-                editing Blogger themes. A custom theme code of blog
-                taught me a lot about XML, HTML & CSS!
+                From the start i have done some Blogger theme development, academic projects,
+                developed projects for my organization also i do the research
+                works like device fingerprinting. My organization also i do the research
+                works like device fingerprinting.
               </p>
               <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}>
                 “It's not a faith in technology. It's faith in people.”
@@ -23,7 +24,7 @@ export default function AboutMe() {
         </Card>
       </Col>
       <Col md={5} style={{ paddingTop: "10px", paddingBottom: "50px" }} className="about-img">
-        <img src={AboutMeCard} alt="about" className="img-fluid" />
+        <img src={projectCover} alt="Rahul Siwal Projects" className="img-fluid" />
       </Col>
     </Row>
   );

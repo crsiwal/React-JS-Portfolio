@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.png";
 import IntroDesktop from "./IntroBlockDesktop.js";
 import IntroMobile from "./IntroBlockMobile.js";
-import Type from "./Type";
+import TextWriting from "./TextWriting";
+import { homeLogo } from "../Assets";
 
-function Home() {
+export default function Home() {
   const isMobile = window.innerWidth <= 500;
   return (
     <section>
@@ -19,7 +19,7 @@ function Home() {
                 </h1>
                 <div style={{ paddingLeft: 50, fontSize: 25 }}>Sr Software Engineer</div>
                 <div style={{ padding: 50, textAlign: "left" }}>
-                  <Type />
+                  <TextWriting />
                 </div>
               </Col>
               :
@@ -29,7 +29,7 @@ function Home() {
                 </h1>
                 <div style={{ paddingLeft: 50, fontSize: 25 }}>Sr Software Engineer</div>
                 <div style={{ padding: 50, textAlign: "left" }}>
-                  <Type />
+                  <TextWriting />
                 </div>
               </Col>
             }
@@ -43,5 +43,3 @@ function Home() {
     </section>
   );
 }
-
-export default Home;

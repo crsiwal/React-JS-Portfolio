@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import laptopImg from "../../Assets/about.png";
+import { pageNotFound } from "../Assets";
 
 function About() {
   return (
@@ -22,7 +22,7 @@ function About() {
             style={{ paddingTop: "10px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img src={pageNotFound} alt="about" className="img-fluid" />
           </Col>
         </Row>
       </Container>

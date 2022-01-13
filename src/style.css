@@ -308,7 +308,7 @@ body {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  padding-top: 5em !important;
 }
 
 @media (max-width: 767px) {
@@ -325,7 +325,7 @@ body {
 }
 
 .home-about-description {
-  padding-top: 100px !important;
+  padding-top: 4em !important;
   padding-bottom: 20px !important;
   text-align: center;
 }
@@ -496,7 +496,7 @@ body {
 }
 
 .card-img-top {
-  padding: 20px !important;
+  padding: 20px;
   opacity: 1 !important;
   border-radius: 10px !important;
 }
@@ -542,25 +542,19 @@ body {
   padding-bottom: 30px !important;
   /* background-image: var(--section-background-color) !important; */
 }
-
 .tech-icons {
   font-size: 4.5em !important;
-  margin: 15px !important;
-  padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgb(0 52 61 / 38%) !important;
   vertical-align: middle !important;
   text-align: center !important;
-  border-radius: 5px !important;
-  display: table !important;
-  box-shadow: 4px 5px 4px 3px rgb(0 52 61 / 8%) !important;
   overflow: hidden !important;
+  display: list-item !important;
   transition: all 0.4s ease 0s !important;
 }
 
 @media (max-width: 767px) {
   .tech-icons {
-    margin: 10px !important;
+    margin: 0px !important;
   }
 }
 
