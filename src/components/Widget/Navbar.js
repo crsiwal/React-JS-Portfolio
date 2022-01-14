@@ -3,12 +3,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import { logo } from "./Assets";
+import { logo } from "../Assets";
 import { Link } from "react-router-dom";
-import { ImBlog } from "react-icons/im";
 import { AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
-
 import { VscLink } from "react-icons/vsc";
+import { BsChatSquareDots } from "react-icons/bs";
+import { HiOutlinePencilAlt } from "react-icons/hi";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -73,18 +73,18 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
+              <Nav.Link as={Link} to="/blogs" rel="noreferrer">
+                <HiOutlinePencilAlt style={{ marginBottom: "2px" }} /> Blogs
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/contact"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Contact
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link href="#" target="_blank" rel="noreferrer">
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <BsChatSquareDots style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
 

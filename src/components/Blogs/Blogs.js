@@ -1,13 +1,15 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import ContactSummery from "./ContactSummery";
+import BlogSummery from "./BlogSummery";
+import BlogsList from "./BlogList";
 
 export default function Contact() {
   return (
     <section>
-      <Container fluid className="contact-section" id="contact">
+      <Container fluid className="blog-section" id="blogs">
         <Container>
-          <ContactSummery />
+          <BlogSummery />
+          <BlogsList />
         </Container>
       </Container>
     </section>

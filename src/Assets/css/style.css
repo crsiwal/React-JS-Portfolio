@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+body {
+  margin: 0;
+  font-family: "Raleway", serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35)); */
+}
 html {
   --section-background-color: linear-gradient(
     to bottom left,
@@ -51,7 +59,7 @@ body {
   height: 100%;
   z-index: 999999;
   background-color: #ffffff;
-  background-image: url(./Assets/pre.svg);
+  background-image: url(../icons/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -449,6 +457,25 @@ body {
 .blockquote-footer {
   color: var(--text-color) !important;
 }
+
+/* --------- */
+/* Blogs */
+/* --------- */
+.blog-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+}
+
+/* --------- */
+/* Contact me */
+/* --------- */
+.contact-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+}
+
 /* --------- */
 /* Projects */
 /* --------- */

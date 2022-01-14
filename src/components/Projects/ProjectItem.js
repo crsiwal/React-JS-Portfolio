@@ -6,7 +6,7 @@ import {
   ProjectShutdown,
 } from "./ProjectItemActions";
 
-export default function ProjectCards(props) {
+export default function ProjectItem(props) {
   return (
     <Col xs={12} md={4} className="project-card mb-4">
       <Card className="project-card-view">
@@ -17,11 +17,11 @@ export default function ProjectCards(props) {
         />
         <Card.ImgOverlay style={{ opacity: 0 }}>
           <Card.Title style={{ fontSize: "22px" }}>{props.title}</Card.Title>
-          {props.status == "active_web" ? (
+          {props.status === "active_web" ? (
             <VisitWebsite {...props} />
-          ) : props.status == "dev_web" ? (
+          ) : props.status === "dev_web" ? (
             <InDevelopmentProject {...props} />
-          ) : props.status == "shutdown" ? (
+          ) : props.status === "shutdown" ? (
             <ProjectShutdown {...props} />
           ) : (
             ""

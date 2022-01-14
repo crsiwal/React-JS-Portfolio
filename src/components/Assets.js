@@ -1,25 +1,26 @@
 // Navbar Images
-import logo from "../Assets/logo.png";
+import logo from "../Assets/icons/logo.png";
 
 // Import Home Page Images
-import homeLogo from "../Assets/home-main.png";
+import homeLogo from "../Assets/banners/home-main.png";
+import programmerIntro from "../Assets/banners/programmerIntro.jpg";
 
 // Import About Me Page Images
-import AboutMeCard from "../Assets/about.png";
-import PersonalImg from "../Assets/personal.jpg";
+import AboutMeCard from "../Assets/banners/about.png";
+import PersonalImg from "../Assets/personal/personal.jpg";
 import mspup from "../Assets/Education/mspup.png";
 import ccs from "../Assets/Education/ccs.png";
 import uptu from "../Assets/Education/uptu.png";
 
 // Import Projects Page Images
-import projectCover from "../Assets/project_caption.png";
+import projectCover from "../Assets/banners/project_caption.png";
 
 // Companies Logo Images
-import momagic from "../Assets/momagic.jpg";
-import adGyde from "../Assets/adgdye.png";
-import bailiwick from "../Assets/bailiwick.png";
-import gonutrio from "../Assets/gonutrio.png";
-import nmss from "../Assets/nmss.png";
+import momagic from "../Assets/company/momagic.jpg";
+import adGyde from "../Assets/company/adgdye.png";
+import bailiwick from "../Assets/company/bailiwick.png";
+import gonutrio from "../Assets/company/gonutrio.png";
+import nmss from "../Assets/company/nmss.png";
 
 // Import Projects Images
 import adgyde_dashboard from "../Assets/Projects/adgyde_dashboard.png";
@@ -28,7 +29,7 @@ import adgyde_website from "../Assets/Projects/adgyde_website.png";
 import jio_messenger from "../Assets/Projects/jio_messenger.jpg";
 
 // Import Page Not Found Images
-import pageNotFound from "../Assets/about.png";
+import pageNotFound from "../Assets/banners/about.png";
 
 // ===========================================================================================================
 // ===========================================================================================================
@@ -37,7 +38,7 @@ import pageNotFound from "../Assets/about.png";
 export { logo };
 
 // Export Home Page Images
-export { homeLogo };
+export { homeLogo, programmerIntro };
 
 // Export About Me Page Images
 export { AboutMeCard, PersonalImg, mspup, ccs, uptu };

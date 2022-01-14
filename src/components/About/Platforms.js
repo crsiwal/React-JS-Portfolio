@@ -7,6 +7,7 @@ import {
   SiApache,
   SiXampp,
   SiPhpmyadmin,
+  SiGooglecloud,
 } from "react-icons/si";
 
 function Toolstack() {
@@ -36,6 +37,9 @@ function Toolstack() {
         <SiPhpmyadmin />
       </Col>
 
+      <Col xs={4} md={3} className="tech-icons border-0 shadow-none m-0">
+        <SiGooglecloud />
+      </Col>
     </Row>
   );
 }

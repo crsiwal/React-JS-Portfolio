@@ -4,15 +4,12 @@ import {
   SiVisualstudiocode,
   SiGithub,
   SiPostman,
-  SiGooglecloud,
   SiBitbucket,
   SiTrello,
   SiWikimediacommons,
   SiEclipseide,
 } from "react-icons/si";
-import {
-  DiNetbeans
-} from "react-icons/di";
+import { DiNetbeans } from "react-icons/di";
 
 function Toolstack() {
   return (
@@ -48,7 +45,6 @@ function Toolstack() {
       <Col xs={4} md={3} className="tech-icons border-0 shadow-none m-0">
         <SiWikimediacommons />
       </Col>
-
     </Row>
   );
 }

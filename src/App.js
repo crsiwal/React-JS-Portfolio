@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from "react";
-import Preloader from "../src/components/Pre";
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Preloader from "./components/Widget/Pre";
+import Navbar from "./components/Widget/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer";
+import Blogs from "./components/Blogs/Blogs";
+import Footer from "./components/Widget/Footer";
 import Resume from "./components/Resume/Resume";
 import PageNotFound from "./components/Pages/PageNotFound";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
+import ScrollToTop from "./components/Widget/ScrollToTop";
+import "./Assets/css/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./style.css";
-import ScrollToTop from "./components/ScrollToTop";
+import "./Assets/css/style.css";
 
-function App() {
+export default function App() {
   const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/project" component={Projects} />
           <Route path="/contact" component={Contact} />
+          <Route path="/blogs" component={Blogs} />
           <Route path="/resume" component={Resume} />
           <Route path="*" component={PageNotFound} />
         </Switch>
@@ -44,5 +46,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
