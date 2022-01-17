@@ -17,11 +17,12 @@ export default function ProjectSummery() {
           <Card.Body>
             <blockquote className="blockquote">
               <p style={{ textAlign: "justify" }}>
-                From the start i have done some Blogger theme development,
-                academic projects, developed projects for my organization also i
-                do the research works like device fingerprinting. My
-                organization also i do the research works like device
-                fingerprinting.
+                <b>Seven Plus</b> years of programming experience that taught me
+                facing challenging tasks and comes out to top of it. I skilled
+                ourself in web development like Html, Css, Javascript, Php,
+                ReactJS, NextJs, ExpressJS, CodeIgniter, Jquery, eChartJS, Rest
+                API, mysql, Redis, Ajax, Bootstrap, Github, Bitbucket, Joomla,
+                WordPress.
               </p>
               <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}>
                 “The best error message is the one that never shows up.”

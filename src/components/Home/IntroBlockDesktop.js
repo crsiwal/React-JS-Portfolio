@@ -31,7 +31,7 @@ export default function IntroDesktop() {
               <br />I love <b>bugs</b> because it gives me a new experience
               every time.
               <span className="purple">
-                &nbsp;App Attribution &amp; Analytics, e-commerce and Social
+                &nbsp;App Attribution &amp; Analytics, Internet of things, e-commerce and Social
                 Community
               </span>{" "}
               are my field of Interest's.
