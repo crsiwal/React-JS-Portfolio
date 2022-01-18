@@ -1,32 +1,26 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import resumePdf from "../../Assets/pdf/RahulSiwal-Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
-
+  const [thisYear, setThisYear] = useState();
   useEffect(() => {
-    setWidth(window.innerWidth);
+    setThisYear(new Date().getFullYear());
   }, []);
 
   return (
     <div>
       <Container fluid className="resume-section">
         <Row className="resume">
-          <Document file={resumePdf}>
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
-
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button variant="primary" href={resumePdf} target="_blank">
-            <AiOutlineDownload /> Download
-          </Button>
+          <Col xs={12} md={12} className="text-center">
+            <div className="resume-title">DIGITAL CV</div>
+            <div className="resume-desc">2015 - {thisYear}</div>
+            <Button className="resume-btn text-white rounded-pill pl-5 pr-5" variant="primary" href={resumePdf} target="_blank">
+              VIEW MY CV
+            </Button>
+          </Col>
         </Row>
       </Container>
     </div>

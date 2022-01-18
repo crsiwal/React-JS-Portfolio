@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import { logo } from "../Assets";
+import { desklogo, moblogo } from "../Assets";
 import { Link } from "react-router-dom";
 import { AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
 import { VscLink } from "react-icons/vsc";
@@ -23,7 +23,7 @@ function NavBar() {
   }
 
   window.addEventListener("scroll", scrollHandler);
-
+  const isMobile = window.innerWidth <= 500;
   return (
     <Navbar
       expanded={expand}
@@ -34,7 +34,7 @@ function NavBar() {
       <Container>
         <Navbar.Brand>
           <Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-            <img src={logo} className="img-fluid logo" alt="brand" />
+            <img src={(isMobile ? moblogo : desklogo)} className="img-fluid logo" alt="brand" />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle

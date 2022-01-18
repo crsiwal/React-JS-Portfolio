@@ -1,5 +1,6 @@
 // Navbar Images
-import logo from "../Assets/icons/logo.png";
+import desklogo from "../Assets/icons/desklogo.png";
+import moblogo from "../Assets/icons/moblogo.png";
 
 // Import Home Page Images
 import homeLogo from "../Assets/banners/home-main.png";
@@ -33,9 +34,8 @@ import pageNotFound from "../Assets/banners/about.png";
 
 // ===========================================================================================================
 // ===========================================================================================================
-
 // Export Navbar Images
-export { logo };
+export { desklogo, moblogo };
 
 // Export Home Page Images
 export { homeLogo, programmerIntro };
