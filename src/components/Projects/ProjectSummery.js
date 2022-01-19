@@ -17,7 +17,7 @@ export default function ProjectSummery() {
           <Card.Body>
             <blockquote className="blockquote">
               <p style={{ textAlign: "justify" }}>
-                <b>Seven Plus</b> years of programming experience that taught me
+                <b>Seven plus</b> years of programming experience that taught me
                 facing challenging tasks and comes out to top of it. I skilled
                 ourself in web development like Html, Css, Javascript, Php,
                 ReactJS, NextJs, ExpressJS, CodeIgniter, Jquery, eChartJS, Rest

@@ -14,7 +14,7 @@ export default function Employers(props) {
         style={{ maxWidth: "600px", margin: "auto" }}
       >
         I'm proud to have collaborated with these awesome companies and worked
-        on various projects
+        on products
       </h2>
       <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
         <EmployerItem name="MoMagic" logo={momagic} alt="" />
