@@ -22,6 +22,11 @@ import adGyde from "../Assets/company/adgdye.png";
 import bailiwick from "../Assets/company/bailiwick.png";
 import gonutrio from "../Assets/company/gonutrio.png";
 import nmss from "../Assets/company/nmss.png";
+import irctc from "../Assets/company/irctc.png";
+import mediatek from "../Assets/company/MediaTek.png";
+import storecheq from "../Assets/company/storecheq.png";
+import switchedonkids from "../Assets/company/switchedonkids.png";
+import tripoffbeat from "../Assets/company/tripoffbeat.png";
 
 // Import Projects Images
 import segmentation_dashboard from "../Assets/Projects/segmentation_dashboard.png";
@@ -57,10 +62,36 @@ export { AboutMeCard, PersonalImg, mspup, ccs, uptu };
 export { projectCover };
 
 // Companies logo exported
-export { momagic, adGyde, bailiwick, gonutrio, nmss };
+export {
+  momagic,
+  adGyde,
+  bailiwick,
+  gonutrio,
+  nmss,
+  irctc,
+  mediatek,
+  storecheq,
+  tripoffbeat,
+  switchedonkids,
+};
 
 // Export Projects Images
-export { segmentation_dashboard, adgyde_dashboard_v2, adgyde_website_v3, adgyde_reporting, adgyde_dashboard_v1, adgyde_website_v2, mchamp_dashboard, store_cheq, trip_off_beat, switched_on_kids, gonutrio_community, vaibhogam_banner, jio_messenger, comapere_2_gain };
+export {
+  segmentation_dashboard,
+  adgyde_dashboard_v2,
+  adgyde_website_v3,
+  adgyde_reporting,
+  adgyde_dashboard_v1,
+  adgyde_website_v2,
+  mchamp_dashboard,
+  store_cheq,
+  trip_off_beat,
+  switched_on_kids,
+  gonutrio_community,
+  vaibhogam_banner,
+  jio_messenger,
+  comapere_2_gain,
+};
 
 // Export Page Not Found Images
 export { pageNotFound };

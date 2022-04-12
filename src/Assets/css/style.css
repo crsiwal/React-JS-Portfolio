@@ -38,6 +38,10 @@ body {
   color: var(--imp-text-color) !important;
 }
 
+.App {
+  text-align: center;
+}
+
 /* Override Bootstrap CSS */
 .btn-outline-primary {
   border-width: 2px;
@@ -463,15 +467,6 @@ body {
 }
 
 /* --------- */
-/* Contact me */
-/* --------- */
-.contact-section {
-  position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
-}
-
-/* --------- */
 /* Projects */
 /* --------- */
 .project-section {
@@ -596,6 +591,46 @@ body {
   .about-img {
     padding-top: 0 !important;
   }
+}
+
+/* --------- */
+/* Contact me */
+/* --------- */
+.contact-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+}
+.contact-title {
+  font-size: 3.2em;
+  text-transform: uppercase;
+  font-family: cursive;
+}
+.contact-action {
+  font-size: 5.2em;
+  text-transform: uppercase;
+  color: var(--imp-text-color) !important;
+  font-weight: bold;
+  margin: 0.3em 0px;
+  padding-bottom: 0.1em;
+  font-style: italic;
+  font-family: cursive;
+}
+.contact-btn {
+  font-size: 1em;
+  margin: 0.3em 0px;
+}
+.contact-mobile {
+  font-size: 1.1em;
+  margin-top: 1.5em;
+}
+.contact-mobile-message {
+  font-size: 1em;
+  font-family: sans-serif;
+}
+.contact-mobile-number {
+  font-size: 1em;
+  font-family: sans-serif;
 }
 /* --------- */
 /* Resume Page CSS */

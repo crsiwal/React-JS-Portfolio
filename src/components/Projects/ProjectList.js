@@ -1,6 +1,5 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
-import ProjectItem from "./ProjectItem";
 
 import SegmentationDashboard from "./Listing/SegmentationDashboard";
 import AdgydeDashboardV2 from "./Listing/AdgydeDashboardV2";

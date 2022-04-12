@@ -1,8 +1,8 @@
 import React from "react";
-import {Row, Col, Card} from "react-bootstrap";
+import { Row, Col, Card } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
 import { PersonalImg } from "../Assets";
-import { BsArrowReturnRight } from 'react-icons/bs';
+import { BsArrowReturnRight } from "react-icons/bs";
 
 function AboutCard() {
   return (
@@ -13,10 +13,15 @@ function AboutCard() {
       <Row style={{ justifyContent: "center", padding: "10px" }}>
         <Col md={3} style={{ marginTop: "2em" }}>
           <Tilt>
-            <img src={PersonalImg} className="img-thumbnail" alt="Rahul Siwal" />
+            <img
+              src={PersonalImg}
+              className="img-thumbnail"
+              alt="Rahul Siwal"
+            />
           </Tilt>
         </Col>
-        <Col md={8}
+        <Col
+          md={8}
           style={{
             justifyContent: "center",
             paddingTop: "0px",
@@ -26,15 +31,18 @@ function AboutCard() {
           <Card className="quote-card-view">
             <Card.Body style={{ fontSize: "1.1em" }}>
               <p style={{ textAlign: "justify" }}>
-                I fell in love with programming and I have at least learned something, I think… 🤷‍♂️
+                I fell in love with programming and I have at least learned
+                something, I think… 🤷‍♂️
               </p>
               <p style={{ textAlign: "left" }}>
-                I'm a villager from <span className="purple"> Hapur, Uttar Pradesh, India.</span>&nbsp;
-                Currently, I’ve had the privilege of working as a senior software engineer at AdGyde, MoMagic Noida.
-                Previously worked with Bailiwick Solution, GoNutrio, and NMSS Technologies.
+                I'm a villager from{" "}
+                <span className="purple"> Hapur, Uttar Pradesh, India.</span>
+                &nbsp; Currently, I’ve had the privilege of working as a senior
+                software engineer at AdGyde, MoMagic Noida. Previously worked
+                with Bailiwick Solution, GoNutrio, and NMSS Technologies.
               </p>
 
-              <p style={{ textAlign: "justify" }}>
+              <div style={{ textAlign: "justify" }}>
                 Apart from programming, some other activities that I love!
                 <ul style={{ paddingInlineStart: "15px" }}>
                   <li className="about-activity">
@@ -48,9 +56,9 @@ function AboutCard() {
                   </li>
                 </ul>
                 <br />
-              </p>
+              </div>
             </Card.Body>
-          </Card >
+          </Card>
         </Col>
       </Row>
     </>

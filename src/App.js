@@ -11,7 +11,6 @@ import Footer from "./components/Widget/Footer";
 import Resume from "./components/Resume/Resume";
 import PageNotFound from "./components/Pages/PageNotFound";
 import ScrollToTop from "./components/Widget/ScrollToTop";
-import "./Assets/css/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Assets/css/style.css";
 

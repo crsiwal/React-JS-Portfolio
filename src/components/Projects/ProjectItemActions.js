@@ -4,9 +4,11 @@ import { FiChevronRight, FiSunset } from "react-icons/fi";
 import { VscTools } from "react-icons/vsc";
 
 export function ProjectItemActions(props) {}
-export function VisitWebsite() {
+export function VisitWebsite(props) {
+  let link = props.link || "#";
   return (
     <Button
+      target="_blank"
       variant="outline-primary"
       className="text-white rounded-pill mt-3"
       style={{
@@ -14,7 +16,7 @@ export function VisitWebsite() {
         height: "2.5em",
         padding: "0.45rem 1.2rem",
       }}
-      href="#"
+      href={link}
     >
       Visit Website <FiChevronRight />
     </Button>

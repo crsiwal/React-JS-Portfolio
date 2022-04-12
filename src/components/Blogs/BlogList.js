@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Row from "react-bootstrap/Row";
 import BlogItem from "./BlogItem";
-import { adgyde_dashboard } from "../Assets";
 import axios from "../../library/Ajax";
 
 export default function BlogList() {
@@ -9,10 +8,11 @@ export default function BlogList() {
   const [isLoading, setLoadingStatus] = useState(true);
   const [isError, setErrorStatus] = useState(false);
   useEffect(() => {
+    /*
     axios
       .get("photos")
       .then((res) => {
-        const postsList = res.data.slice(0, 12);
+        const postsList = res.data.slice(0, 1);
         setErrorStatus(false);
         setLoadingStatus(false);
         updatePosts(postsList);
@@ -23,6 +23,7 @@ export default function BlogList() {
         setErrorStatus(true);
         updatePosts([]);
       });
+      */
   }, []);
 
   return (
