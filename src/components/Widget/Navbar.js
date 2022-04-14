@@ -34,7 +34,11 @@ function NavBar() {
       <Container>
         <Navbar.Brand>
           <Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-            <img src={(isMobile ? moblogo : desklogo)} className="img-fluid logo" alt="brand" />
+            <img
+              src={isMobile ? moblogo : desklogo}
+              className="img-fluid logo"
+              alt="brand"
+            />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle
@@ -73,7 +77,12 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/blogs" rel="noreferrer">
+              <Nav.Link
+                as={Link}
+                to="/blogs"
+                onClick={() => updateExpanded(false)}
+                rel="noreferrer"
+              >
                 <HiOutlinePencilAlt style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
             </Nav.Item>
@@ -93,6 +102,7 @@ function NavBar() {
                 as={Link}
                 to="/resume"
                 className="fork-btn-inner text-white rounded-pill"
+                onClick={() => updateExpanded(false)}
               >
                 <VscLink style={{ marginTop: "-5px", fontSize: "1.5em" }} />
                 {" Resume"}

@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import { projectCover } from "../Assets";
 
 export default function ProjectSummery() {
+  const [thisYear, setThisYear] = useState(2022);
+  useEffect(() => {
+    setThisYear(new Date().getFullYear());
+  }, []);
+
   return (
     <Row style={{ justifyContent: "center", padding: "10px" }}>
       <Col
@@ -17,12 +22,12 @@ export default function ProjectSummery() {
           <Card.Body>
             <blockquote className="blockquote">
               <p style={{ textAlign: "justify" }}>
-                <b>Seven plus</b> years of programming experience that taught me
-                facing challenging tasks and comes out to top of it. I skilled
-                ourself in web development like Html, Css, Javascript, Php,
-                ReactJS, NextJs, ExpressJS, CodeIgniter, Jquery, eChartJS, Rest
-                API, mysql, Redis, Ajax, Bootstrap, Github, Bitbucket, Joomla,
-                WordPress.
+                More than {thisYear - 2015} years of programming experience that
+                taught me to face challenging tasks and come out on top of it. I
+                skilled ourselves in web development like Html, CSS, Javascript,
+                Php, ReactJS, NextJs, ExpressJS, CodeIgniter, Jquery, eChartJS,
+                Rest API, MySQL, Redis, Ajax, Bootstrap, Github, Bitbucket,
+                Joomla, WordPress.
               </p>
               <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}>
                 “The best error message is the one that never shows up.”

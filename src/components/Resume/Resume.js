@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import resumePdf from "../../Assets/pdf/RahulSiwal-Resume.pdf";
 
 function ResumeNew() {
-  const [thisYear, setThisYear] = useState();
+  const [thisYear, setThisYear] = useState(2022);
   useEffect(() => {
     setThisYear(new Date().getFullYear());
   }, []);
@@ -17,7 +17,7 @@ function ResumeNew() {
             <div className="resume-title">DIGITAL CV</div>
             <div className="resume-desc">
               {thisYear - 2015}
-              <span style={{ verticalAlign: "sub" }}>+</span> years experience
+              <span style={{ verticalAlign: "super" }}>+</span> years experience
             </div>
             <div className="resume-exptime">2015 - {thisYear}</div>
             <Button
