@@ -11,7 +11,7 @@ export default function IntroMobile() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description pt-5">
-            <h1 style={{ fontSize: "3.6em" }}>
+            <h1 style={{ fontSize: "2.5em" }}>
               <b>
                 Let <span className="purple"> me </span> Introduce
               </b>
