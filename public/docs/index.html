@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rahul Siwal - Professional Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      html,
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      a {
+        color: #3130ee;
+      }
+      .bold {
+        font-weight: 600;
+      }
+      .container {
+        max-width: 786px;
+        min-height: calc(11.3in * 3);
+        margin: auto;
+        border: 1px solid #ebebeb;
+        border-radius: 6px;
+        overflow: hidden;
+        --tw-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+        --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+          0 2px 4px -2px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+
+      .flex {
+        display: flex;
+      }
+      .flex-center {
+        justify-content: center;
+      }
+      .flex-between {
+        justify-content: space-between;
+      }
+      .photo {
+        width: 164.92px;
+        height: 164.92px;
+      }
+      .head-right {
+        background-color: #303745;
+        width: 100%;
+        padding-left: 35px;
+        padding-top: 25px;
+        -webkit-print-color-adjust: exact;
+      }
+      .head-right-name {
+        color: #fff;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        line-height: 1em;
+      }
+
+      .head-right-desc {
+        color: #979ba2;
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 1.8em;
+      }
+      .mt-4 {
+        margin-top: 12px;
+      }
+      .mt-5 {
+        margin-top: 15px;
+      }
+
+      .mr-2 {
+        margin-right: 5px;
+      }
+      .ml-5 {
+        margin-left: 15px;
+      }
+      .head-right-email,
+      .head-right-phone,
+      .head-right-address {
+        color: #979ba2;
+        font-size: 12px;
+        letter-spacing: 0px;
+      }
+      .content {
+        padding: 30px 0;
+      }
+      .content-left {
+        border-right: 1px solid #e2e2e2;
+        width: 100%;
+        padding: 0 30px;
+      }
+      .content-right {
+        width: 50%;
+        padding: 0 20px;
+      }
+      section {
+        margin: 15px 0px 25px 0px;
+      }
+      section.border:not(:last-child) {
+        border-bottom: 1px solid #e2e2e2;
+        padding-bottom: 25px;
+      }
+      section .heading {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0px;
+        color: #303745;
+        margin-top: 15px;
+      }
+
+      /* Section Entries CSS */
+      section.entries .entry .title .top {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0px;
+        color: black;
+      }
+      section.entries .entry .title .bottom {
+        font-size: 13px;
+        margin-top: 4px;
+        font-weight: 300;
+        line-height: 15px;
+        letter-spacing: 0px;
+        color: #888888;
+      }
+      section.entries .entry .period {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0px;
+        color: black;
+        white-space: nowrap;
+      }
+      section.entries .entry .summery {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.4em;
+        letter-spacing: 0px;
+        color: #443a3a;
+        padding: 4px 0;
+      }
+      section.entries .entry .desc ul {
+        list-style-position: outside;
+        padding-inline-start: 25px;
+        margin-top: 5px;
+      }
+      section.entries .entry .desc ul li {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.4em;
+        letter-spacing: 0px;
+        color: black;
+        padding: 4px;
+      }
+
+      /* Section Refrence Person CSS */
+      section.reference .person .title .name {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0px;
+        color: black;
+      }
+      section.reference .person .title .organization {
+        font-size: 13px;
+        margin-top: 4px;
+        font-weight: 300;
+        line-height: 15px;
+        letter-spacing: 0px;
+        color: #888888;
+      }
+      section.reference .person .des {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0px;
+        color: #303745;
+      }
+      section.reference .person .contact {
+        margin-top: 10px;
+      }
+      section.reference .person .contact .phone {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 15px;
+        letter-spacing: 0px;
+        color: #888888;
+      }
+      section.reference .person .contact .email {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 15px;
+        letter-spacing: 0px;
+        color: #888888;
+      }
+      /* Section - Personal Details */
+      section.titles .info .subject {
+        font-size: 13px;
+        margin-top: 4px;
+        font-weight: 300;
+        line-height: 1.2em;
+        letter-spacing: 0px;
+        color: #888888;
+      }
+      section.titles .info .detail {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.2em;
+        letter-spacing: 0px;
+        margin-top: 5px;
+        color: black;
+      }
+
+      /* Percentage Slider Css */
+      .progress {
+        width: 100%;
+        max-width: 200px;
+        height: 6px;
+        background: #e1e4e8;
+        border-radius: 1px;
+        margin-top: 8px;
+        overflow: hidden;
+        -webkit-print-color-adjust: exact;
+      }
+
+      .progress-bar {
+        display: block;
+        height: 100%;
+        background: #303745;
+        -webkit-print-color-adjust: exact;
+      }
+
+      /* Block List CSS */
+      section.list .items {
+        list-style-type: square;
+        margin-block-start: 15px;
+        padding-inline-start: 30px;
+        margin-bottom: -12px;
+      }
+
+      section.list .items .item span {
+        vertical-align: super;
+        font-size: 13px;
+      }
+
+      section.list .items li.item::marker {
+        font-size: 1.6em;
+        line-height: 10px;
+        color: #303745;
+      }
+
+      /* Section Summery with text css */
+      section.summery .text {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.7em;
+        letter-spacing: 0px;
+        color: black;
+        padding: 4px;
+      }
+
+      /* Declaration Signature CSS */
+      section.declaration img.signature {
+        max-width: 80px;
+        margin-top: 3px;
+      }
+
+      /* Print Page CSS */
+      @page {
+        size: A4;
+        overflow: visible;
+        margin: 25px 0;
+      }
+      @page :first {
+        margin: 0;
+      }
+      @media print {
+        .printbreak {
+          page-break-before: always;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="head flex">
+        <div class="head-left flex">
+          <img class="photo" src="photo.jpg" />
+        </div>
+        <div class="head-right">
+          <div class="head-right-name">Rahul Siwal</div>
+          <div class="head-right-desc">
+            Sr. Software Engineer at Momagic Technologies Pvt Ltd
+          </div>
+          <div class="flex mt-5">
+            <div class="head-right-email">
+              <i class="fa-solid fa-envelope mr-2"></i> rsiwal.com@gmail.com
+            </div>
+            <div class="head-right-phone ml-5">
+              <i class="fa-solid fa-phone-flip mr-2"></i> +91 9634 02 6262
+            </div>
+          </div>
+          <div class="head-right-address">
+            <i class="fa-solid fa-location-dot mr-2"></i> Village & Post
+            Shahmahiuddinpur, Tehsil & District Hapur, Uttar Pradesh, India -
+            245101
+          </div>
+        </div>
+      </div>
+      <div class="content flex flex-between">
+        <div class="content-left">
+          <!-- Section Education -->
+          <section class="entries border">
+            <div class="heading">Education</div>
+            <div class="entry mt-5">
+              <div class="flex flex-between">
+                <div class="title">
+                  <div class="top">Master of Computer Applications</div>
+                  <div class="bottom">
+                    Harcourt Butler Technical University, Kanpur
+                  </div>
+                </div>
+                <div class="period">Jun 2012 - May 2015</div>
+              </div>
+            </div>
+            <div class="entry mt-5">
+              <div class="flex flex-between">
+                <div class="title">
+                  <div class="top">Bachelor of Computer Applications</div>
+                  <div class="bottom">
+                    Chaudhary Charan Singh University, Meerut
+                  </div>
+                </div>
+                <div class="period">Jul 2009 - May 2012</div>
+              </div>
+            </div>
+            <div class="entry mt-5">
+              <div class="flex flex-between">
+                <div class="title">
+                  <div class="top">Senior Secondary School</div>
+                  <div class="bottom">T.S.S Inter College</div>
+                </div>
+                <div class="period">Jul 2006 - May 2008</div>
+              </div>
+            </div>
+            <div class="entry mt-5">
+              <div class="flex flex-between">
+                <div class="title">
+                  <div class="top">Higher Secondary School</div>
+                  <div class="bottom">T.S.S Inter College</div>
+                </div>
+                <div class="period">Jul 2005 - May 2006</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section Employment -->
+          <section class="entries border">
+            <div class="heading">Employment</div>
+            <div class="entry mt-5">
+              <div class="flex flex-between">
+                <div class="title">
+                  <div class="top">Senior Software Engineer</div>
+                  <div class="bottom">Momagic Technologies Pvt Ltd, Noida</div>
+                </div>
+                <div class="period">Dec 2017 - Present</div>
+              </div>
+              <div class="desc">
+                <ul>
+                  <li>
+                    Responsible for client-side data collection for Web
+                    Analytics, DMP, and DSP
+                  </li>
+                  <li>
+                    Manage and develop of Remote Phone Control application with
+                    Mediatek.
+                  </li>
+                  <li>
+                    Manage and development of user segmentation and notification
+                    system for IRCTC.
+                    <a target="_blank" href="https://segments.truenotify.in/">
+                      https://segments.truenotify.in
+                    </a>
+                  </li>
+                  <li>
+                    Development of a Strong reporting system for AdGyde
+                    Advertisers, Partners, and Internal Team.
+                  </li>
+                  <li>
+                    Design, develop, and maintenance a lightweight Advertiser
+                    and Partner dashboard that shows the data and configuration
+                    options of Advertiser applications and has Administration
+                    features.
+                    <a target="_blank" href="https://dashboard.adgyde.com/">
+                      https://dashboard.adgyde.com
+                    </a>
+                  </li>
+                  <li>
+                    Develop and maintenance of AdGyde Websites and maintenance.
+                    <a target="_blank" href="https://www.adgyde.com/">
+                      https://www.adgyde.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="entry mt-5">
+              <div class="flex flex-between">
+                <div class="title">
+                  <div class="top">Full Stack Developer</div>
+                  <div class="bottom">NMSS Technologies Pvt Ltd, Noida</div>
+                </div>
+                <div class="period">May 2015 - Dec 2017</div>
+              </div>
+              <div class="desc">
+                <ul>
+                  <li>
+                    Worked as a team member to develop a digital currency of
+                    gifting for mobile-enabled users in the digital world.
+                    <a target="_blank" href="https://www.storecheq.com/">
+                      https://www.storecheq.com
+                    </a>
+                  </li>
+                  <li>
+                    Worked as a team member of a travel agency that provides
+                    tourist place information and travel-related services.
+                    <a target="_blank" href="https://www.tripoffbeat.com/">
+                      https://www.tripoffbeat.com/
+                    </a>
+                  </li>
+                  <li class="printbreak">
+                    Develop an online community of doctors and CMS [infographic,
+                    Recipes, & blogs] for an e-commerce portal that sells
+                    certified natural and organic products to live a healthy
+                    lifestyle.
+                    <a target="_blank" href="https://www.gonutrio.com/">
+                      https://www.gonutrio.com
+                    </a>
+                    [Shutdown in 2019]
+                  </li>
+                  <li>
+                    Worked as a team member of an online blogging platform
+                    written in Joomla PHP.
+                    <a target="_blank" href="https://www.purelyb.com/">
+                      https://www.purelyb.com
+                    </a>
+                  </li>
+                  <li>
+                    Kaios based multi chat application of Facebook, Whatsapp,
+                    Jio chat, and Native SMS. [Shutdown in 2018]
+                  </li>
+                  <li>
+                    Worked as a team member of a price comparison portal that
+                    helps to get the best deals from the online stores Flipkart,
+                    and Amazon. [Shutdown in 2018]
+                  </li>
+                  <li>
+                    Develop an Australia-based leading online store of
+                    educational toys for young adults.
+                    <a
+                      target="_blank"
+                      href="https://www.switchedonkids.com.au/"
+                    >
+                      https://www.switchedonkids.com.au
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section Internships -->
+          <section class="entries border">
+            <div class="heading">Internships</div>
+            <div class="entry mt-5">
+              <div class="flex flex-between">
+                <div class="title">
+                  <div class="top">Intern-Software Engineering</div>
+                  <div class="bottom">NMSS Technologies Pvt. Ltd., Noida</div>
+                </div>
+                <div class="period">Jan 2015 - May 2015</div>
+              </div>
+              <div class="desc">
+                <ul>
+                  <li>
+                    Write an rest-API for application to get rewards on install
+                    application, watch videos etc.
+                  </li>
+                  <li>
+                    Write an a rest-API for business to business application.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section Profile -->
+          <section class="summery border">
+            <div class="heading">Profile</div>
+            <div class="text mt-5">
+              I'm post graduated from HBTU, Kanpur in 2015 with a degree of Mast
+              of Computer Application (MCA). I started my professional career as
+              a front end developer from NMSS Tech, Noida.<br />
+              The tech industry is ever-evolving and I love being able to grow
+              with it, while continually solidifying the fundamentals.<br />
+              I also love joining communities, helping and mentoring new
+              developers, and supporting organizations to promote diversity in
+              tech.
+            </div>
+          </section>
+
+          <!-- Section Career Objective -->
+          <section class="summery border">
+            <div class="heading">Career Objective</div>
+            <div class="text mt-5">
+              An enthusiast real-world problems solving using engineering skills
+              with passion for learning, leadership and collaboration. Achieve a
+              key position in the dynamic & result oriented organization and
+              help the organization in achieving their goals with team work,
+              sincerity and dedication.
+            </div>
+          </section>
+
+          <!-- Section Extracurricular activities -->
+          <section class="entries border printbreak">
+            <div class="heading">Extracurricular activities</div>
+
+            <div class="entry mt-5">
+              <div class="flex flex-between">
+                <div class="title">
+                  <div class="top">Modular Employable Skill (M.E.S.)</div>
+                  <div class="bottom">
+                    Ministry of labour and employment, India
+                  </div>
+                </div>
+                <div class="period">Aug 2014 - Aug 2014</div>
+              </div>
+              <div class="summery">
+                National certificate in modular employable skills by “Ministry
+                of labour and employment, India”
+              </div>
+            </div>
+
+            <div class="entry mt-5">
+              <div class="flex flex-between">
+                <div class="title">
+                  <div class="top">Technical Head</div>
+                  <div class="bottom">
+                    Harcourt Butler Technical University, Kanpur
+                  </div>
+                </div>
+                <div class="period">Feb 2014 - Feb 2014</div>
+              </div>
+              <div class="summery">
+                Incord’14 (Annual Technical festival) conducted by Computer
+                Science & Engineering Department
+              </div>
+            </div>
+
+            <div class="entry mt-5">
+              <div class="flex flex-between">
+                <div class="title">
+                  <div class="top">Class Representative</div>
+                  <div class="bottom">
+                    Harcourt Butler Technical University, Kanpur
+                  </div>
+                </div>
+                <div class="period">Jul 2013 - May 2015</div>
+              </div>
+              <div class="summery">
+                Establish or maintain communication between academy, teachers
+                and rest of the students, and solve the students small issues
+                related academy.
+              </div>
+            </div>
+
+            <div class="entry mt-5">
+              <div class="flex flex-between">
+                <div class="title">
+                  <div class="top">United Minds 2011</div>
+                  <div class="bottom">
+                    Institute of Informatics & Management Sciences, Meerut
+                  </div>
+                </div>
+                <div class="period">Mar 2011 - Mar 2011</div>
+              </div>
+              <div class="summery">
+                Participation in United Minds 2011 event conducted by IIM
+                Bangalore Vista
+              </div>
+            </div>
+          </section>
+
+          <!-- Section References -->
+          <section class="reference border">
+            <div class="heading">References</div>
+            <div class="person mt-5">
+              <div class="flex flex-between">
+                <div class="title">
+                  <div class="name">Saurabh Kathapalia</div>
+                  <div class="organization">
+                    MoMagic Technologies Pvt. Ltd., Noida
+                  </div>
+                </div>
+                <div class="des">AGM, Technology</div>
+              </div>
+              <div class="contact flex">
+                <div class="phone">
+                  <i class="fa-solid fa-phone-flip mr-2"></i> +919899106755
+                </div>
+                <div class="email ml-5">
+                  <i class="fa-solid fa-envelope mr-2"></i>
+                  saurabh.kathpalia@momagic.com
+                </div>
+              </div>
+            </div>
+            <div class="person mt-5">
+              <div class="flex flex-between">
+                <div class="title">
+                  <div class="name">Sushil Naresh</div>
+                  <div class="organization">NMSS Tech Pvt. Ltd., Noida</div>
+                </div>
+                <div class="des">Director</div>
+              </div>
+              <div class="contact flex">
+                <div class="phone">
+                  <i class="fa-solid fa-phone-flip mr-2"></i> +919818751483
+                </div>
+                <div class="email ml-5">
+                  <i class="fa-solid fa-envelope mr-2"></i> sushil@nmstech.in
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section Declaration -->
+          <section class="summery declaration border">
+            <div class="heading">Declaration</div>
+            <div class="text mt-5">
+              I hereby declare that above information is correct to the best of
+              my knowledge and belief.
+            </div>
+            <div class="text mt-5 flex flex-between">
+              <div>
+                <div class="bold">Date</div>
+                <div id="sigdate">-- -- ----</div>
+              </div>
+              <div>
+                <div class="bold">Rahul Siwal</div>
+                <div><img class="signature" src="signature.png" /></div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="content-right">
+          <!-- Section Personal Details -->
+          <section class="titles border">
+            <div class="heading">Personal details</div>
+            <div class="info mt-5">
+              <div class="subject">Date of birth</div>
+              <div class="detail">August 5th, 1991</div>
+            </div>
+            <div class="info mt-5">
+              <div class="subject">Place of birth</div>
+              <div class="detail">Hapur, Uttar Pradesh</div>
+            </div>
+            <div class="info mt-5">
+              <div class="subject">Gender</div>
+              <div class="detail">Male</div>
+            </div>
+            <div class="info mt-5">
+              <div class="subject">Nationality</div>
+              <div class="detail">Indian</div>
+            </div>
+            <div class="info mt-5">
+              <div class="subject">Portfolio</div>
+              <div class="detail">
+                <a target="_blank" href="https://www.rsiwal.com/">
+                  rsiwal.com
+                </a>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="subject">Github</div>
+              <div class="detail">
+                <a target="_blank" href="https://www.github.com/crsiwal">
+                  github.com/crsiwal
+                </a>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="subject">LinkedIn</div>
+              <div class="detail">
+                <a target="_blank" href="https://www.linkedin.com/in/rsiwal/">
+                  linkedin.com/in/rsiwal
+                </a>
+              </div>
+            </div>
+          </section>
+          <!-- Section Technical Skills -->
+          <section class="titles border">
+            <div class="heading">Skills</div>
+            <div class="info mt-5">
+              <div class="detail">PHP</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 95%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">JavaScript</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 95%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">React JS</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 70%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">Node JS</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 35%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">HTML & CSS</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 95%"></span>
+              </div>
+            </div>
+
+            <div class="info mt-5">
+              <div class="detail">Bootstrap CSS</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 95%"></span>
+              </div>
+            </div>
+
+            <div class="info mt-5">
+              <div class="detail">Tailwind CSS</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 50%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">RDMS</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 70%"></span>
+              </div>
+            </div>
+            <div class="info mt-5 printbreak">
+              <div class="detail">KAI OS</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 75%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">WordPress & Woo-Commerce</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 85%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">Core Java</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 55%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">Google Cloud</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 35%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">Version Control, GIT</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 75%"></span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section Languages -->
+          <section class="titles border">
+            <div class="heading">Languages</div>
+            <div class="info mt-5">
+              <div class="detail">English</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 75%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">Hindi</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 100%"></span>
+              </div>
+            </div>
+            <div class="info mt-5">
+              <div class="detail">Punjabi</div>
+              <div class="progress">
+                <span class="progress-bar" style="width: 35%"></span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section Hobbies -->
+          <section class="list border">
+            <div class="heading">Hobbies</div>
+            <ul class="items">
+              <li class="item"><span>Programming</span></li>
+              <li class="item"><span>Planting tree</span></li>
+              <li class="item"><span>Play with kids</span></li>
+            </ul>
+          </section>
+
+          <!-- Section Qualities -->
+          <section class="list border">
+            <div class="heading">Qualities</div>
+            <ul class="items">
+              <li class="item"><span>Teamwork</span></li>
+              <li class="item"><span>Problem Solving</span></li>
+              <li class="item"><span>Multitasking</span></li>
+              <li class="item"><span>Communication</span></li>
+              <li class="item"><span>Critical Thinking</span></li>
+              <li class="item"><span>Modular Approch</span></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script>
+      const date = new Date()
+        .toLocaleDateString("en-GB", {
+          day: "numeric",
+          month: "short",
+          year: "numeric",
+        })
+        .replace(/ /g, " ");
+      document.getElementById("sigdate").textContent = date;
+    </script>
+  </body>
+</html>

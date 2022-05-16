@@ -15,7 +15,7 @@ function Contact() {
             <Button
               className="contact-btn text-white rounded-pill pl-5 pr-5"
               variant="primary"
-              href="mailto:rahulsiwal62@gmail.com"
+              href="mailto:rsiwal.com@gmail.com"
             >
               Write a email
             </Button>

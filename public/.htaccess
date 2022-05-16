@@ -13,6 +13,7 @@
 
 Options -MultiViews
 RewriteEngine On
+RewriteRule ^(docs)($|/) - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.html [QSA,L]
 
