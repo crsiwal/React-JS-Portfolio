@@ -8,16 +8,15 @@ function Contact() {
       <Container fluid className="contact-section">
         <Row className="contact">
           <Col xs={12} md={12} className="text-center">
-            <div className="contact-title">For Your Project</div>
-            <div style={{ display: "none1" }} className="contact-action hide">
-              Hire Me
+            <div className="contact-title">
+              LET'S TALK
             </div>
             <Button
               className="contact-btn text-white rounded-pill pl-5 pr-5"
               variant="primary"
-              href="mailto:rsiwal.com@gmail.com"
+              href="mailto:rsiwaltech@gmail.com"
             >
-              Write a email
+              Write me a email
             </Button>
             <div className="contact-mobile">
               <div className="contact-mobile-message">
@@ -28,7 +27,7 @@ function Contact() {
                 variant="link"
                 href="tel:+919634026262"
               >
-                +919634026262
+                +91 9634 02 6262
               </Button>
             </div>
           </Col>

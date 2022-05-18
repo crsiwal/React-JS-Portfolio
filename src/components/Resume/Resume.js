@@ -14,7 +14,7 @@ function ResumeNew() {
       <Container fluid className="resume-section">
         <Row className="resume">
           <Col xs={12} md={12} className="text-center">
-            <div className="resume-title">DIGITAL CV</div>
+            <div className="resume-title">DIGITAL RESUME</div>
             <div className="resume-desc">
               {thisYear - 2015}
               <span style={{ verticalAlign: "super" }}>+</span> years experience
@@ -26,7 +26,7 @@ function ResumeNew() {
               href={resumePdf}
               target="_blank"
             >
-              VIEW MY CV
+              Download Resume
             </Button>
           </Col>
         </Row>

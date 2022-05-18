@@ -25,7 +25,7 @@ export default function Home() {
               :
               <Col md={7} className="home-header">
                 <h1 style={{ paddingBottom: 15, paddingLeft: 50, fontSize: 70 }}>
-                  Rahul <strong className="main-name">Siwal</strong>
+                  Hey, I'm <strong className="main-name">Rahul</strong>
                 </h1>
                 <div style={{ paddingLeft: 50, fontSize: 25 }}>Sr Software Engineer</div>
                 <div style={{ padding: 50, textAlign: "left" }}>
