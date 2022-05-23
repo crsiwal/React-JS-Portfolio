@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rahul Siwal - Professional Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      html,
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      a {
+        color: #3130ee;
+      }
+      p {
+        margin: 0 0 5px 0;
+        padding: 0;
+      }
+      b {
+        font-weight: 600;
+      }
+      .bold {
+        font-weight: 600;
+      }
+      .container {
+        max-width: 786px;
+        min-height: calc(11.3in * 1);
+        margin: auto;
+        border: 1px solid #ebebeb;
+        border-radius: 6px;
+        overflow: hidden;
+        --tw-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+        --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+          0 2px 4px -2px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+
+      .flex {
+        display: flex;
+      }
+      .flex-center {
+        justify-content: center;
+      }
+      .flex-between {
+        justify-content: space-between;
+      }
+      .photo {
+        width: 164.92px;
+        height: 164.92px;
+      }
+      .head-right {
+        background-color: #303745;
+        width: 100%;
+        padding-left: 35px;
+        padding-top: 25px;
+        -webkit-print-color-adjust: exact;
+      }
+
+      .head-right-name {
+        color: #fff;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        line-height: 1em;
+      }
+      .mt-4 {
+        margin-top: 12px;
+      }
+      .mt-5 {
+        margin-top: 15px;
+      }
+      .mb-4 {
+        margin-bottom: 12px;
+      }
+      .mb-5 {
+        margin-bottom: 15px;
+      }
+      .mr-2 {
+        margin-right: 5px;
+      }
+      .ml-5 {
+        margin-left: 15px;
+      }
+
+      .pt-5 {
+        padding-top: 15px;
+      }
+
+      .head-right-email,
+      .head-right-phone,
+      .head-right-address {
+        color: #979ba2;
+        font-size: 12px;
+        letter-spacing: 0px;
+      }
+      .content {
+        padding: 30px 0;
+      }
+      .content-left {
+        width: 100%;
+        padding: 0 30px;
+      }
+      .content-right {
+        width: 50%;
+        padding: 0 20px;
+      }
+      section {
+        padding: 4px;
+      }
+      section.border:not(:last-child) {
+        border-bottom: 1px solid #e2e2e2;
+        padding-bottom: 25px;
+      }
+      section .heading {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0px;
+        color: #303745;
+        margin-top: 15px;
+      }
+
+      /* Section Summery with text css */
+      section.summery {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.7em;
+        letter-spacing: 0px;
+        color: black;
+      }
+
+      /* Declaration Signature CSS */
+      section.declaration img.signature {
+        max-width: 80px;
+        margin-top: 3px;
+      }
+
+      /* Print Page CSS */
+      @page {
+        size: A4;
+        overflow: visible;
+        margin: 25px 0;
+      }
+      @page :first {
+        margin: 0;
+      }
+      @media print {
+        .printbreak {
+          page-break-before: always;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="head flex">
+        <div class="head-left flex">
+          <img class="photo" src="photo.jpg" />
+        </div>
+        <div class="head-right">
+          <div class="head-right-name mt-5">Rahul Siwal</div>
+          <div class="flex mt-5 pt-5">
+            <div class="head-right-email">
+              <i class="fa-solid fa-envelope mr-2"></i> rsiwaltech@gmail.com
+            </div>
+            <div class="head-right-phone ml-5">
+              <i class="fa-solid fa-phone-flip mr-2"></i> +91 9634 02 6262
+            </div>
+          </div>
+          <div class="head-right-address">
+            <i class="fa-solid fa-location-dot mr-2"></i> Village & Post
+            Shahmahiuddinpur, Tehsil & District Hapur, Uttar Pradesh, India -
+            245101
+          </div>
+        </div>
+      </div>
+      <div class="content flex flex-between">
+        <div class="content-left">
+          <!-- Section Company Recipient -->
+          <section class="summery">
+            <p style="display: none">Recipient Name</p>
+            <p style="display: none">Company Name</p>
+            <p style="display: none">Recipient Address</p>
+            <p style="display: none">{postal code}, {City}</p>
+            <p id="sigdate">-- -- ----</p>
+          </section>
+
+          <!-- Section Introduction -->
+          <section class="summery introduction">
+            <p class="mb-5">Dear, Hiring Manager</p>
+            <p>
+              I am a software engineer. I have been developing websites and
+              applications for more than 7 years. Most my experience lies in
+              full stack development. I have worked with HTML/CSS,
+              Javascript/ReactJS, PHP, MySQL, some other languages like Node JS
+              and a little bit of Shell & Python. Now I would like to express my
+              interest in filling an open vacancy at your organization, in
+              particular, the position of Lead Software Engineer.
+            </p>
+          </section>
+
+          <!-- Section Curremt Situation  -->
+          <section class="summery situation">
+            <p>
+              I am currently working as a Senior software engineer at MoMagic
+              Technologies Private Limited in Noida Uttar Pradesh from last 5
+              years. Here I am responsible for the MoMagic attribution tracking
+              product that is <b>AdGyde</b>. I have especially experience in
+              Attribution, Analytics, and E-Commerce domain as very positive.
+            </p>
+          </section>
+
+          <!-- Section Motivation  -->
+          <section class="summery motivation">
+            <p>
+              You will get high level summaries of my job duties/education
+              history in my resume or my portfolio (<a
+                target="_blank"
+                href="https://rsiwal.com"
+                >rsiwal.com</a
+              >) . If you want to see some of the projects that I work on in my
+              spare time, see my GitHub profile: github.com/conneraiken and my
+              portfolio site: fittedtech.com (recommendations, some portfolio
+              items and more).
+              -------------------------------------------------------------------------
+              I would like to put these characteristics to use within your
+              organization. My experience as Senior Software Engineer at MoMagic
+              Technologies Pvt. Ltd., has provided me with the expertise to be
+              able to make a valuable contribution to your organization in the
+              position of Lead Software Engineer.
+            </p>
+          </section>
+
+          <!-- Section closing  -->
+          <section class="summery closing">
+            <p>
+              I would like to further explain my motivation to work at your
+              organization during a personal meeting. You can reach me either by
+              phone via <a href="tel:+919634026262">+919634026262</a> or by
+              email via
+              <a href="mailto:rsiwaltech@gmail.com">rsiwaltech@gmail.com</a>.
+              Thank you for your consideration. I look forward to hearing from
+              you.
+            </p>
+          </section>
+
+          <!-- Section signature  -->
+          <section class="summery declaration">
+            <p>Sincerely,</p>
+            <p>Rahul Siwal</p>
+            <div><img class="signature" src="signature.png" /></div>
+            <p>Attachment: Resume</p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script>
+      const date = new Date()
+        .toLocaleDateString("en-GB", {
+          day: "numeric",
+          month: "short",
+          year: "numeric",
+        })
+        .replace(/ /g, " ");
+      document.getElementById("sigdate").textContent = date;
+    </script>
+  </body>
+</html>

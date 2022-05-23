@@ -611,14 +611,14 @@ body {
 }
 .contact-btn {
   font-size: 1em;
-  margin: 0.3em 0px;
+  margin: 0.3em;
 }
 .contact-mobile {
   font-size: 1.1em;
   margin: 2em 0 4em 0;
 }
 .contact-mobile-message {
-  font-size: 1em;
+  font-size: 0.6em;
 }
 .contact-mobile-number {
   font-size: 1em;
