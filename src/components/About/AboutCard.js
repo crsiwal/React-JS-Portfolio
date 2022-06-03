@@ -25,7 +25,7 @@ function AboutCard() {
           style={{
             justifyContent: "center",
             paddingTop: "0px",
-            paddingBottom: "50px",
+            paddingBottom: "10px",
           }}
         >
           <Card className="quote-card-view">
@@ -39,20 +39,20 @@ function AboutCard() {
                 <span className="purple"> Hapur, Uttar Pradesh, India.</span>
                 &nbsp; Currently, I’ve had the privilege of working as a senior
                 software engineer at AdGyde, MoMagic Noida. Previously worked
-                with Bailiwick Solution, GoNutrio, and NMSS Technologies.
+                with NMSS Technologies.
               </p>
 
               <div style={{ textAlign: "justify" }}>
                 Apart from programming, some other activities that I love!
-                <ul style={{ paddingInlineStart: "15px" }}>
+                <ul className="mt-3" style={{ paddingInlineStart: "15px" }}>
                   <li className="about-activity">
-                    <BsArrowReturnRight /> Writting Tech Blogs
-                  </li>
-                  <li className="about-activity">
-                    <BsArrowReturnRight /> Travelling
+                    <BsArrowReturnRight /> Planting tree
                   </li>
                   <li className="about-activity">
                     <BsArrowReturnRight /> Social Service
+                  </li>
+                  <li className="about-activity">
+                    <BsArrowReturnRight /> Play with kids
                   </li>
                 </ul>
                 <br />
